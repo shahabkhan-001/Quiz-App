@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body onload="setQuestion()" style="height: 100vh;" class="bg-dark">
+    <section class="main card w-50 bg-white" id="quizBox" >
+        <header class="header p-2">
+            <h1 id="htmlQuestion">
+                Question
+            </h1>
+        </header>
+        <div class="body card-body container-lg">
+            <ul class="list-group list-group-flush">
+                <li onclick="checkOption(this)" class="htmlOptionList list-group-item ">option 1</li>
+                <li onclick="checkOption(this)" class="htmlOptionList list-group-item ">option 2</li>
+                <li onclick="checkOption(this)" class="htmlOptionList list-group-item ">option 3</li>
+                <li onclick="checkOption(this)" class="htmlOptionList list-group-item ">option 4</li>
+            </ul>
+        </div>
+        <div class="bottom d-flex justify-content-around p-2">
+            <div id="countValue">
+                1/7
+            </div>
+            <button class="hide" id="nextQuestion" onclick="nextQuest()">
+                NEXT
+            </button>
+        </div>
+    </section>
+<div  class="hide" id="resultValue">
+        <div class="card border-0 bg-dark" >
+            <h1 class="text-center text-white ">
+                RESULT
+            </h1>
+            <img src="./reward.png" class="m-auto" width="300px" height="300px" alt="result">
+            <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+            </div>
+            <div id="scoreCard" class="text-center font-weight-bolder">
+
+            </div>
+            <a href="./index.html" style="margin: 20px auto;"><button class="btn btn-primary">Go to Main</button></a>
+        </div>
+</div>
+</body>
+<script src="./bootstrap-4.6.1-dist/js/jquery.slim.min.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/popper.min.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</html>

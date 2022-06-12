@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+    <div  class="card formControl bg-dark text-info">
+        <h1 class="text-center text-danger">
+            QUIZ ASSIGNMENT
+        </h1>
+        <label for="name">
+            NAME
+        </label>
+        <br />
+        <input type="text" class=" bg-dark font-italic" placeholder="Enter Your Name....."  id="name" required>
+        <span id="text"></span>
+        <br />
+        <label for="email">
+            EMAIL
+        </label>
+        <br />
+        <input type="email" class=" bg-dark" placeholder="Enter Email Address..." id="email" required>
+        <span id="emailAddress"></span>
+        <br />        
+        <label for="number">
+            PHONE NUMBER
+        </label>
+        <br />
+        <input type="number" class=" bg-dark" placeholder="03XX XXXXXXX" maxlength="12" minlength="3" id="number" required>
+        <span id="phoneNumber"></span>
+        <br />        
+        <label for="code">
+            BMJ CODE
+        </label>
+        <br />
+        <input type="number" class=" bg-dark" placeholder="XXXX" minlength="4" id="code" required>
+        <span id="codeNumber"></span>
+        <br />
+        <div class="d-flex justify-content-end " >
+            <button onclick="checkInformation()" style="margin-top: 10px;" type="submit" class="btn btn-primary">SUBMIT</button>
+        </div>
+    </div>
+</body>
+<script src="./bootstrap-4.6.1-dist/js/jquery.slim.min.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/popper.min.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+<script src="./app.js"></script>
+</html>
